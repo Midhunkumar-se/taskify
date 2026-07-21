@@ -33,11 +33,32 @@ let role: [number, string];
 // let personName: unknown;
 // let personName2: never;
 
-//
+//Extending types
+
+type X = {
+  a: string;
+  b: number;
+};
+
+type Y = X & {
+  c: string;
+  d: number;
+};
+
+let yts: Y = {
+  a: "f",
+  b: 32,
+  c: "edfc",
+  d: 42,
+};
 
 interface Person {
   name: string;
   age?: number;
+}
+
+interface Boy extends Person {
+  profession: string;
 }
 
 function App() {
