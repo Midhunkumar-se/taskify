@@ -29,6 +29,10 @@ let role: [number, string];
 
 // let person2: Person[] = [];
 
+//Never and Unknown Type
+let personName: unknown;
+let personName2: never;
+
 function App() {
   const [count, setCount] = useState(0);
 
