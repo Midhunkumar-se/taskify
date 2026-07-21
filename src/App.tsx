@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 
 let name = "Midhun";
-let age = 5;
+let age: number | string = 5;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
