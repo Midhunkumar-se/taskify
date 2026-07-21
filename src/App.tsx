@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 
-let name = "Midhun";
+let name: any = "Midhun";
 let age: number | string = 5;
 let isStudent: boolean;
 let hobbies: string[];
