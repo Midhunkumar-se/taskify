@@ -4,7 +4,7 @@ import "./App.css";
 import InputFeild from "./components/InputFeild";
 
 const App: React.FC = () => {
-  const [count, setCount] = useState(0);
+  const [todo, setTodo] = useState<string>("");
 
   return (
     <div className="App">
