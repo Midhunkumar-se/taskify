@@ -8,17 +8,26 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-type Person = {
-  name: string;
-  age?: number;
-};
+// Function type
+// let printName1: (name: string) => void;
 
-let person: Person = {
-  name: "Midhun",
-  // age: 33
-};
+// function printName(name: string) {
+//   console.log(name);
+// }
+// printName("mk");
 
-let person2: Person[] = [];
+// Object Type
+// type Person = {
+//   name: string;
+//   age?: number;
+// };
+
+// let person: Person = {
+//   name: "Midhun",
+//   // age: 33
+// };
+
+// let person2: Person[] = [];
 
 function App() {
   const [count, setCount] = useState(0);
