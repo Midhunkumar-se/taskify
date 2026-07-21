@@ -30,8 +30,15 @@ let role: [number, string];
 // let person2: Person[] = [];
 
 //Never and Unknown Type
-let personName: unknown;
-let personName2: never;
+// let personName: unknown;
+// let personName2: never;
+
+//
+
+interface Person {
+  name: string;
+  age?: number;
+}
 
 function App() {
   const [count, setCount] = useState(0);
