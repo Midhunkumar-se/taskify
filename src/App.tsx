@@ -11,6 +11,10 @@ const App: React.FC = () => {
 
   function handleAdd(e: React.SyntheticEvent) {
     e.preventDefault();
+     if (todo) {
+      setTodos([...todos, { id: Date.now(), todo: todo, isDone: false }]);
+      setTodo("");
+    }
   }
 =======
 >>>>>>> 4c3c0ff0421c48af018dedb34e6cae7e0e648e4d
@@ -19,6 +23,7 @@ const App: React.FC = () => {
     <div className="App">
       <span className="heading">Taskify</span>
       <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      {/* <TodoList/> */}
     </div>
   );
 };
