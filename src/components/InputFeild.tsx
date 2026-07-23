@@ -5,11 +5,12 @@ import "./style.css";
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
+  handleAdd: (e: React.SyntheticEvent) => void;
 }
 
-const InputFeild: React.FC<Props> = ({ todo, setTodo }: Props) => {
+const InputFeild: React.FC<Props> = ({ todo, setTodo, handleAdd }: Props) => {
   return (
-    <form className="input">
+    <form className="input" onSubmit={handleAdd}>
       <input
         type="input"
         value={todo}
